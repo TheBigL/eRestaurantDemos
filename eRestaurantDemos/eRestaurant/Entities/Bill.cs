@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,11 +26,11 @@ namespace eRestaurant.Entities
         public int NumberInParty { get; set; }
         [Required]
         public bool PaidStatus { get; set; }
-        [Required]
+        [ForeignKey("WaiterID")]
         public int WaiterID { get; set; }
-        [Required]
+        [ForeignKey("TableID")]
         public int TableID { get; set; }
-        [Required]
+        [ForeignKey("ReservationID")]
         public int ReservationID { get; set; }
 
         public string Comment { get; set; }
