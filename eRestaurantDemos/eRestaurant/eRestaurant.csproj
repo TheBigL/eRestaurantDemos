@@ -50,6 +50,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\eRestaurantContext.cs" />
+    <Compile Include="Entities\Bill.cs" />
+    <Compile Include="Entities\BillItems.cs" />
+    <Compile Include="Entities\Items.cs" />
+    <Compile Include="Entities\MenuCategories.cs" />
+    <Compile Include="Entities\RecipeIngredients.cs" />
+    <Compile Include="Entities\Recipes.cs" />
     <Compile Include="Entities\Reservation.cs" />
     <Compile Include="Entities\ReservationTables.cs" />
     <Compile Include="Entities\SpecialEvent.cs" />
